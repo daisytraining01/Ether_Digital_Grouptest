@@ -5,18 +5,18 @@
 <listener class-name="com.ether.listener.TestListener"/>
 </listeners>
 <parameter name="deviceType" value="cloudDevice"></parameter>
-<parameter name="appName" value="General-Store.apk"></parameter>
-<parameter name="cloudAppName" value="cloud:com.androidsample.generalstore/.SplashActivity"></parameter>
+<parameter name="appName" value="Math Games Learn Add Subtract Multiply Divide_v8.4_apkpure.com.apk"></parameter>
+<parameter name="cloudAppName" value="cloud:com.GamesForKids.Mathgames.MultiplicationTables/.SplashScreenActivity"></parameter>
 <parameter name="realDevice" value="R58M78H1SPP"></parameter>
 <parameter name="emulator" value="emulator-5554"></parameter>
-<parameter name="cloudDevice" value="4b52573533563398"></parameter>
-<parameter name="appBuildVersion" value="1"></parameter>
-<parameter name="appReleaseVersion" value="1.0"></parameter>
+<parameter name="cloudDevice" value="c8fc88d6"></parameter>
+<parameter name="appBuildVersion" value="84"></parameter>
+<parameter name="appReleaseVersion" value="8.4"></parameter>
   <test name="Test">
   <parameter name="deviceType" value="emulator"></parameter>
     <classes>
       <class name="com.ether.base.Base"/>
-      <class name="com.ether.testcases.GeneralStoreTest"/>
+      <class name="com.ether.testcases.IndividualSubjective_suganya"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

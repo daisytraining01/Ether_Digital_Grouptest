@@ -19,13 +19,20 @@ public class GSHomePage {
 	public static final By name = By.id("com.androidsample.generalstore:id/nameField");
 	public static final By gender = By.id("com.androidsample.generalstore:id/radioMale");
 	public static final By search = By.id("com.androidsample.generalstore:id/btnLetsShop");
-	
+	/*
 	//productMenu
 	public static final By priceList = By.id("com.androidsample.generalstore:id/productPrice");
 	public static final By productList = By.id("com.androidsample.generalstore:id/productName");
 	public static final By cartList = By.id("com.androidsample.generalstore:id/productAddCart");
 	public static final By cartButton = By.id("com.androidsample.generalstore:id/appbar_btn_cart");
-	public static final By cartCount = By.id("com.androidsample.generalstore:id/counterText");
+	public static final By cartCount = By.id("com.androidsample.generalstore:id/counterText");*/
+	
+	//productMenu
+		public static final By priceList = By.id("productPrice");
+		public static final By productList = By.id("productName");
+		public static final By cartList = By.id("productAddCart");
+		public static final By cartButton = By.id("appbar_btn_cart");
+		public static final By cartCount = By.id("counterText");
 	
 	
 	/*

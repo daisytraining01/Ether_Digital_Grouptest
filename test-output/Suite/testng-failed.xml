@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="deviceType" value="emulator"/>
+  <parameter name="deviceType" value="cloudDevice"/>
   <parameter name="emulator" value="emulator-5554"/>
+  <parameter name="cloudAppName" value="cloud:com.androidsample.generalstore/.SplashActivity"/>
   <parameter name="realDevice" value="R58M78H1SPP"/>
   <parameter name="appName" value="General-Store.apk"/>
+  <parameter name="appBuildVersion" value="1"/>
+  <parameter name="appReleaseVersion" value="1.0"/>
+  <parameter name="cloudDevice" value="4b52573533563398"/>
   <listeners>
     <listener class-name="com.ether.listener.TestListener"/>
   </listeners>

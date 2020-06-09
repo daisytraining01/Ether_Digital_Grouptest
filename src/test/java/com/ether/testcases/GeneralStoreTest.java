@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -22,6 +23,14 @@ public class GeneralStoreTest {
 	@Test//(dataProvider = "getData", dataProviderClass = TestData.class)
 	public void homePage() throws InterruptedException {
 		AndroidDriver driver = Base.driver;
+		
+		//Select select = new Select(driver.findElement(By.className("android.widget.DropDownListView")));
+		//select.selectByIndex(3);
+		driver.findElement(By.id("nameField")).sendKeys("naser");
+		driver.findElement(By.id("radioMale")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("btnLetsShop")).click();
+		/*
 		driver.findElement(GSHomePage.countryDropdown).click();
 		System.out.println(driver.findElement(GSHomePage.country).getText());
 		driver.findElement(GSHomePage.country).click();
@@ -30,7 +39,7 @@ public class GeneralStoreTest {
 		Thread.sleep(2000);
 		driver.findElement(GSHomePage.gender).click();
 		Thread.sleep(2000);
-		driver.findElement(GSHomePage.search).click();
+		driver.findElement(GSHomePage.search).click();*/
 		Thread.sleep(2000);
 		//driver.resetApp();
 		
@@ -39,8 +48,11 @@ public class GeneralStoreTest {
 	public void productPriceTest(String product , String price) {
 		int priceIndex;
 		AndroidDriver<WebElement> driver = Base.driver;
-		List<WebElement> priceList = driver.findElements(By.id("com.androidsample.generalstore:id/productPrice"));
-		List<WebElement> productList = driver.findElements(By.id("com.androidsample.generalstore:id/productName"));
+		//List<WebElement> priceList = driver.findElements(By.id("com.androidsample.generalstore:id/productPrice"));
+		//List<WebElement> productList = driver.findElements(By.id("com.androidsample.generalstore:id/productName"));
+		
+		List<WebElement> priceList = driver.findElements(By.id("productPrice"));
+		List<WebElement> productList = driver.findElements(By.id("productName"));
 		//productList.get(0)
 		System.out.println(productList.get(0).getText());
 		System.out.println(product);
