@@ -4,7 +4,7 @@
 <listeners>
 <listener class-name="com.ether.listener.TestListener"/>
 </listeners>
-<parameter name="deviceType" value="realDevice"></parameter>
+<parameter name="deviceType" value="cloudDevice"></parameter>
 <parameter name="appName" value="Wheel Size_v1.2.0_apkpure.com.apk"></parameter>
 <parameter name="cloudAppName" value="cloud:com.wheelsize/.presentation.container.AppContainer"></parameter>
 <parameter name="realDevice" value="R58M78H1SPP"></parameter>

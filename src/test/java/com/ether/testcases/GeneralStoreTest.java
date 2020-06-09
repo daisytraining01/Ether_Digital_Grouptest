@@ -1,5 +1,6 @@
 package com.ether.testcases;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -67,11 +68,11 @@ public class GeneralStoreTest {
 	}
 	
 	@Test(dependsOnMethods = "productPriceTest")
-	public void addProductToCartTest() throws InterruptedException {
+	public void addProductToCartTest() throws InterruptedException, IOException {
 		AndroidDriver<WebElement> driver = Base.driver;
 		//List<WebElement> cartLinks = driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart"));
 		//List<WebElement> productList = driver.findElements(By.id("com.androidsample.generalstore:id/productName"));
-		
+		actions.info("Products List", Base.driver);
 		List<WebElement> cartLinks = driver.findElements(GSHomePage.cartList);
 		List<WebElement> productList = driver.findElements(GSHomePage.productList);
 		//String productName = productList.get(0).getText();
@@ -87,6 +88,7 @@ public class GeneralStoreTest {
 		System.out.println(cartLinks.size());
 		if(Integer.parseInt(cartCount) == cartLinks.size()) {
 			actions.pass("Items are succesfully added to the cart");
+			actions.pass("Screenshot", Base.driver);
 			
 		}
 		System.out.println("number of items added to the cart are "+ cartCount);

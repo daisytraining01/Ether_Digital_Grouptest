@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="deviceType" value="cloudDevice"/>
+  <parameter name="deviceType" value="emulator"/>
   <parameter name="emulator" value="emulator-5554"/>
-  <parameter name="cloudAppName" value="cloud:com.androidsample.generalstore/.SplashActivity"/>
+  <parameter name="cloudAppName" value="cloud:com.wordwebsoftware.android.wordweb/.activity.Wo"/>
   <parameter name="realDevice" value="R58M78H1SPP"/>
-  <parameter name="appName" value="General-Store.apk"/>
-  <parameter name="appBuildVersion" value="1"/>
-  <parameter name="appReleaseVersion" value="1.0"/>
-  <parameter name="cloudDevice" value="4b52573533563398"/>
+  <parameter name="appName" value="Dictionary WordWeb_v4.0_apkpure.com (2).apk"/>
+  <parameter name="appBuildVersion" value="35"/>
+  <parameter name="appReleaseVersion" value="4.0"/>
+  <parameter name="cloudDevice" value="c8fc88d6"/>
   <listeners>
     <listener class-name="com.ether.listener.TestListener"/>
   </listeners>
   <test name="Test(failed)">
     <parameter name="deviceType" value="emulator"/>
     <classes>
-      <class name="com.ether.testcases.GeneralStoreTest">
+      <class name="com.ether.testcases.Cloud">
         <methods>
-          <include name="homePage"/>
-          <include name="productPriceTest"/>
-          <include name="addProductToCartTest"/>
+          <include name="sampleTest"/>
+          <include name="sampleTest1"/>
         </methods>
-      </class> <!-- com.ether.testcases.GeneralStoreTest -->
+      </class> <!-- com.ether.testcases.Cloud -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (1)]">
+  <parameter name="deviceType" value="cloudDevice"/>
+  <parameter name="emulator" value="emulator-5554"/>
+  <parameter name="cloudAppName" value="cloud:com.wheelsize/.presentation.container.AppContainer"/>
+  <parameter name="realDevice" value="R58M78H1SPP"/>
+  <parameter name="appName" value="Wheel Size_v1.2.0_apkpure.com.apk"/>
+  <parameter name="appBuildVersion" value="12"/>
+  <parameter name="appReleaseVersion" value="1.2.0"/>
+  <parameter name="cloudDevice" value="c8fc88d6"/>
+  <listeners>
+    <listener class-name="com.ether.listener.TestListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="deviceType" value="emulator"/>
+    <classes>
+      <class name="com.ether.testcases.TestCloudMobile">
+        <methods>
+          <include name="sampleTest"/>
+          <include name="Scenario2"/>
+        </methods>
+      </class> <!-- com.ether.testcases.TestCloudMobile -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite (1)] -->

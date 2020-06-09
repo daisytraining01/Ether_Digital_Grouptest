@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.ether.listener.TestListener"/>
+</listeners>
+<parameter name="deviceType" value="emulator"></parameter>
+<parameter name="appName" value="Dictionary WordWeb_v4.0_apkpure.com (2).apk"></parameter>
+<parameter name="cloudAppName" value="cloud:com.wordwebsoftware.android.wordweb/.activity.Wo"></parameter>
+<parameter name="realDevice" value="R58M78H1SPP"></parameter>
+<parameter name="emulator" value="emulator-5554"></parameter>
+<parameter name="cloudDevice" value="c8fc88d6"></parameter>
+<parameter name="appBuildVersion" value="35"></parameter>
+<parameter name="appReleaseVersion" value="4.0"></parameter>
+  <test name="Test">
+  <parameter name="deviceType" value="emulator"></parameter>
+    <classes>
+      <class name="com.ether.base.Base"/>
+      <class name="com.ether.testcases.Cloud"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
