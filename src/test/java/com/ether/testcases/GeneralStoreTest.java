@@ -83,6 +83,8 @@ public class GeneralStoreTest {
 		}
 		//String cartCount = driver.findElement(By.id("com.androidsample.generalstore:id/counterText")).getText();
 		String cartCount = driver.findElement(GSHomePage.cartCount).getText();
+		System.out.println(cartCount);
+		System.out.println(cartLinks.size());
 		if(Integer.parseInt(cartCount) == cartLinks.size()) {
 			actions.pass("Items are succesfully added to the cart");
 			

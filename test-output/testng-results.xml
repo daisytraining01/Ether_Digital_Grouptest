@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="54551" started-at="2020-06-09T11:09:52Z" finished-at="2020-06-09T11:10:47Z">
+  <suite name="Suite" duration-ms="53306" started-at="2020-06-09T12:11:47Z" finished-at="2020-06-09T12:12:41Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="54551" started-at="2020-06-09T11:09:52Z" finished-at="2020-06-09T11:10:47Z">
+    <test name="Test" duration-ms="53306" started-at="2020-06-09T12:11:47Z" finished-at="2020-06-09T12:12:41Z">
       <class name="com.ether.base.Base">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ether.base.Base@68e5eea7]" name="setUp" is-config="true" duration-ms="66328" started-at="2020-06-09T16:38:46Z" finished-at="2020-06-09T16:39:52Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ether.base.Base@38e79ae3]" name="setUp" is-config="true" duration-ms="43967" started-at="2020-06-09T17:41:04Z" finished-at="2020-06-09T17:41:47Z">
           <params>
             <param index="0">
               <value>
@@ -53,17 +53,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ether.base.Base@68e5eea7]" name="tearDown" is-config="true" duration-ms="16812" started-at="2020-06-09T16:40:47Z" finished-at="2020-06-09T16:41:04Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ether.base.Base@38e79ae3]" name="tearDown" is-config="true" duration-ms="15913" started-at="2020-06-09T17:42:42Z" finished-at="2020-06-09T17:42:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ether.base.Base -->
       <class name="com.ether.testcases.GeneralStoreTest">
-        <test-method status="PASS" signature="homePage()[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="homePage" duration-ms="14791" started-at="2020-06-09T16:39:52Z" finished-at="2020-06-09T16:40:07Z">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:com.ether.testcases.GeneralStoreTest@63070bab]" name="homePage" duration-ms="13940" started-at="2020-06-09T17:41:48Z" finished-at="2020-06-09T17:42:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="productPriceTest(java.lang.String, java.lang.String)[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="productPriceTest" duration-ms="14016" started-at="2020-06-09T16:40:07Z" data-provider="getData" depends-on-methods="com.ether.testcases.GeneralStoreTest.homePage" finished-at="2020-06-09T16:40:21Z">
+        <test-method status="PASS" signature="productPriceTest(java.lang.String, java.lang.String)[pri:0, instance:com.ether.testcases.GeneralStoreTest@63070bab]" name="productPriceTest" duration-ms="15062" started-at="2020-06-09T17:42:01Z" data-provider="getData" depends-on-methods="com.ether.testcases.GeneralStoreTest.homePage" finished-at="2020-06-09T17:42:17Z">
           <params>
             <param index="0">
               <value>
@@ -79,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productPriceTest -->
-        <test-method status="PASS" signature="productPriceTest(java.lang.String, java.lang.String)[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="productPriceTest" duration-ms="13303" started-at="2020-06-09T16:40:21Z" data-provider="getData" depends-on-methods="com.ether.testcases.GeneralStoreTest.homePage" finished-at="2020-06-09T16:40:34Z">
+        <test-method status="PASS" signature="productPriceTest(java.lang.String, java.lang.String)[pri:0, instance:com.ether.testcases.GeneralStoreTest@63070bab]" name="productPriceTest" duration-ms="12722" started-at="2020-06-09T17:42:17Z" data-provider="getData" depends-on-methods="com.ether.testcases.GeneralStoreTest.homePage" finished-at="2020-06-09T17:42:29Z">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productPriceTest -->
-        <test-method status="FAIL" signature="addProductToCartTest()[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="addProductToCartTest" duration-ms="12338" started-at="2020-06-09T16:40:34Z" depends-on-methods="com.ether.testcases.GeneralStoreTest.productPriceTest" finished-at="2020-06-09T16:40:47Z">
+        <test-method status="FAIL" signature="addProductToCartTest()[pri:0, instance:com.ether.testcases.GeneralStoreTest@63070bab]" name="addProductToCartTest" duration-ms="11496" started-at="2020-06-09T17:42:29Z" depends-on-methods="com.ether.testcases.GeneralStoreTest.productPriceTest" finished-at="2020-06-09T17:42:41Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'click args: [NATIVE, xpath=(//*[@resource-id='productAddCart' or @id='productAddCart'])[3], 0, 1]', details: Failed to click 'xpath=(//*[@resource-id='productAddCart' or @id='productAddCart'])[3]'. Cannot click. The element is found but not visible on Screen)  (WARNING: The server did not provide any stacktrace information)
@@ -103,8 +103,8 @@ Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MAVBCP27', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: cloud:com.androidsample.gen..., appActivity: .SplashActivity, appBuildVersion: 1, appPackage: com.androidsample.generalst..., appReleaseVersion: 1.0, appiumVersion: 1.8.0, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, commandTimeouts: 120000, desired: {app: cloud:com.androidsample.gen..., appBuildVersion: 1, appReleaseVersion: 1.0, deviceQuery: @os='android' and @category..., dontGoHomeOnQuit: true, fullReset: true, instrumentApp: true, platformName: Android, udid: 4b52573533563398}, device.category: PHONE, device.majorVersion: 9, device.manufacture: OnePlus, device.model: ONEPLUS A6003, device.name: OnePlus IO-US 084, device.os: Android, device.screenSize: 1080x2280, device.serialNumber: c8fc88d6, device.version: 9, deviceQuery: @os='android' and @category..., deviceUDID: c8fc88d6, dontGoHomeOnQuit: true, dontStopAppOnReset: false, ehmPrefixUrl: /agent-8220267, ehmUrl: https://us-1.seetest.io:443..., fullReset: true, gridNodePort: 7819, install.only.for.update: false, instrumentApp: true, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600, noReset: false, platform: ANDROID, platformName: Android, projectName: , reportDirectory: reports, reportFormat: xml, reportUrl: https://cloud.seetest.io/re..., reservationDuration: 240, takeScreenshots: true, test.type: Mobile, testName: mobile test 06/09/20 04:09 AM, udid: c8fc88d6, useKeystore: false, waitForDeviceTimeout: 120000}
-Session ID: CLOUD-SID:2020-06-09_10-43-14-6554acbc-9fdd-4074-9879-083080069150]]>
+Capabilities {app: cloud:com.androidsample.gen..., appActivity: .SplashActivity, appBuildVersion: 1, appPackage: com.androidsample.generalst..., appReleaseVersion: 1.0, appiumVersion: 1.8.0, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, commandTimeouts: 120000, desired: {app: cloud:com.androidsample.gen..., appBuildVersion: 1, appReleaseVersion: 1.0, deviceQuery: @os='android' and @category..., dontGoHomeOnQuit: true, fullReset: true, instrumentApp: true, platformName: Android, udid: 4b52573533563398}, device.category: PHONE, device.majorVersion: 9, device.manufacture: samsung, device.model: SM-G960U, device.name: Samsung Galaxy S9 IO-US 093, device.os: Android, device.screenSize: 1080x2220, device.serialNumber: 4b52573533563398, device.version: 9, deviceQuery: @os='android' and @category..., deviceUDID: 4b52573533563398, dontGoHomeOnQuit: true, dontStopAppOnReset: false, ehmPrefixUrl: /agent-8220273, ehmUrl: https://us-1.seetest.io:443..., fullReset: true, gridNodePort: 7870, install.only.for.update: false, instrumentApp: true, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600, noReset: false, platform: ANDROID, platformName: Android, projectName: , reportDirectory: reports, reportFormat: xml, reportUrl: https://cloud.seetest.io/re..., reservationDuration: 240, takeScreenshots: true, test.type: Mobile, testName: mobile test 06/09/20 05:11 AM, udid: 4b52573533563398, useKeystore: false, waitForDeviceTimeout: 120000}
+Session ID: CLOUD-SID:2020-06-09_12-06-38-a2ee3602-81c9-44eb-b2af-ca6b6eab79ab]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'click args: [NATIVE, xpath=(//*[@resource-id='productAddCart' or @id='productAddCart'])[3], 0, 1]', details: Failed to click 'xpath=(//*[@resource-id='productAddCart' or @id='productAddCart'])[3]'. Cannot click. The element is found but not visible on Screen)  (WARNING: The server did not provide any stacktrace information)
@@ -112,8 +112,8 @@ Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MAVBCP27', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: cloud:com.androidsample.gen..., appActivity: .SplashActivity, appBuildVersion: 1, appPackage: com.androidsample.generalst..., appReleaseVersion: 1.0, appiumVersion: 1.8.0, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, commandTimeouts: 120000, desired: {app: cloud:com.androidsample.gen..., appBuildVersion: 1, appReleaseVersion: 1.0, deviceQuery: @os='android' and @category..., dontGoHomeOnQuit: true, fullReset: true, instrumentApp: true, platformName: Android, udid: 4b52573533563398}, device.category: PHONE, device.majorVersion: 9, device.manufacture: OnePlus, device.model: ONEPLUS A6003, device.name: OnePlus IO-US 084, device.os: Android, device.screenSize: 1080x2280, device.serialNumber: c8fc88d6, device.version: 9, deviceQuery: @os='android' and @category..., deviceUDID: c8fc88d6, dontGoHomeOnQuit: true, dontStopAppOnReset: false, ehmPrefixUrl: /agent-8220267, ehmUrl: https://us-1.seetest.io:443..., fullReset: true, gridNodePort: 7819, install.only.for.update: false, instrumentApp: true, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600, noReset: false, platform: ANDROID, platformName: Android, projectName: , reportDirectory: reports, reportFormat: xml, reportUrl: https://cloud.seetest.io/re..., reservationDuration: 240, takeScreenshots: true, test.type: Mobile, testName: mobile test 06/09/20 04:09 AM, udid: c8fc88d6, useKeystore: false, waitForDeviceTimeout: 120000}
-Session ID: CLOUD-SID:2020-06-09_10-43-14-6554acbc-9fdd-4074-9879-083080069150
+Capabilities {app: cloud:com.androidsample.gen..., appActivity: .SplashActivity, appBuildVersion: 1, appPackage: com.androidsample.generalst..., appReleaseVersion: 1.0, appiumVersion: 1.8.0, autoAcceptAlerts: false, autoDismissAlerts: false, autoGrantPermissions: false, autoWebview: false, commandTimeouts: 120000, desired: {app: cloud:com.androidsample.gen..., appBuildVersion: 1, appReleaseVersion: 1.0, deviceQuery: @os='android' and @category..., dontGoHomeOnQuit: true, fullReset: true, instrumentApp: true, platformName: Android, udid: 4b52573533563398}, device.category: PHONE, device.majorVersion: 9, device.manufacture: samsung, device.model: SM-G960U, device.name: Samsung Galaxy S9 IO-US 093, device.os: Android, device.screenSize: 1080x2220, device.serialNumber: 4b52573533563398, device.version: 9, deviceQuery: @os='android' and @category..., deviceUDID: 4b52573533563398, dontGoHomeOnQuit: true, dontStopAppOnReset: false, ehmPrefixUrl: /agent-8220273, ehmUrl: https://us-1.seetest.io:443..., fullReset: true, gridNodePort: 7870, install.only.for.update: false, instrumentApp: true, javascriptEnabled: true, keystorePath: ~/.android/debug.keystore, locationServicesAuthorized: false, newSessionWaitTimeout: 600, noReset: false, platform: ANDROID, platformName: Android, projectName: , reportDirectory: reports, reportFormat: xml, reportUrl: https://cloud.seetest.io/re..., reservationDuration: 240, takeScreenshots: true, test.type: Mobile, testName: mobile test 06/09/20 05:11 AM, udid: 4b52573533563398, useKeystore: false, waitForDeviceTimeout: 120000}
+Session ID: CLOUD-SID:2020-06-09_12-06-38-a2ee3602-81c9-44eb-b2af-ca6b6eab79ab
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -154,7 +154,6 @@ Session ID: CLOUD-SID:2020-06-09_10-43-14-6554acbc-9fdd-4074-9879-083080069150
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
 	at org.testng.TestNG.runSuites(TestNG.java:1144)
 	at org.testng.TestNG.run(TestNG.java:1115)
@@ -170,8 +169,4 @@ Session ID: CLOUD-SID:2020-06-09_10-43-14-6554acbc-9fdd-4074-9879-083080069150
       </class> <!-- com.ether.testcases.GeneralStoreTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
-  <suite name="Ether Digital Activity" duration-ms="0" started-at="2020-06-09T11:11:05Z" finished-at="2020-06-09T11:11:05Z">
-    <groups>
-    </groups>
-  </suite> <!-- Ether Digital Activity -->
 </testng-results>

@@ -23,8 +23,8 @@ public class Base {
 	public static AndroidDriver driver;
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\formData.xlsx");
-	private static String accessKey = "eyJ4cC51Ijo4NTM3NzI4LCJ4cC5wIjo4NTM3NzI3LCJ4cC5tIjoiTVRVNU1USTNNRGs0TWpFM053IiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE5MDY2MzE5ODYsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.eQxEx-5SwwTdUvENnvkEedFDoFegNuvlQR91Gnp8bOk";
-	//private static String accessKey ="eyJ4cC51Ijo4NjA5MDEyLCJ4cC5wIjo4NjA5MDExLCJ4cC5tIjoiTVRVNU1UWTNPRGMyTURJME13IiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE5MDcwMzg4MjAsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.KRqGJxtkuwFbcDL09BROX988gbjLdMvnYTOGYl7I4mU";
+	//private static String accessKey = "eyJ4cC51Ijo4NTM3NzI4LCJ4cC5wIjo4NTM3NzI3LCJ4cC5tIjoiTVRVNU1USTNNRGs0TWpFM053IiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE5MDY2MzE5ODYsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.eQxEx-5SwwTdUvENnvkEedFDoFegNuvlQR91Gnp8bOk";
+	private static String accessKey ="eyJ4cC51Ijo4NjA5MDEyLCJ4cC5wIjo4NjA5MDExLCJ4cC5tIjoiTVRVNU1UWTNPRGMyTURJME13IiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE5MDcwMzg4MjAsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.KRqGJxtkuwFbcDL09BROX988gbjLdMvnYTOGYl7I4mU";
 	public static String url = "http://127.0.0.1:4723/wd/hub";
 
 	@BeforeSuite
@@ -51,8 +51,8 @@ public class Base {
 			cap.setCapability("instrumentApp", true);
 			cap.setCapability(MobileCapabilityType.FULL_RESET, true);
 			cap.setCapability("dontGoHomeOnQuit", true);
-			cap.setCapability("appBuildVersion", "1");
-			cap.setCapability("appReleaseVersion", "1.0");
+			cap.setCapability("appBuildVersion", appReleaseVersion);
+			cap.setCapability("appReleaseVersion", appBuildVersion);
 			cap.setCapability("deviceQuery", "@os='android' and @category='PHONE'");
 			url = "https://cloud.seetest.io/wd/hub";
 		} else {
