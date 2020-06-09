@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16823" started-at="2020-06-09T05:40:31Z" finished-at="2020-06-09T05:40:48Z">
+  <suite name="Suite" duration-ms="20051" started-at="2020-06-09T07:53:27Z" finished-at="2020-06-09T07:53:47Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="16823" started-at="2020-06-09T05:40:31Z" finished-at="2020-06-09T05:40:48Z">
+    <test name="Test" duration-ms="20051" started-at="2020-06-09T07:53:27Z" finished-at="2020-06-09T07:53:47Z">
       <class name="com.ether.base.Base">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ether.base.Base@68e5eea7]" name="setUp" is-config="true" duration-ms="20163" started-at="2020-06-09T11:10:11Z" finished-at="2020-06-09T11:10:31Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ether.base.Base@68e5eea7]" name="setUp" is-config="true" duration-ms="20361" started-at="2020-06-09T13:23:07Z" finished-at="2020-06-09T13:23:27Z">
           <params>
             <param index="0">
               <value>
@@ -33,17 +33,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ether.base.Base@68e5eea7]" name="tearDown" is-config="true" duration-ms="6056" started-at="2020-06-09T11:10:49Z" finished-at="2020-06-09T11:10:55Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ether.base.Base@68e5eea7]" name="tearDown" is-config="true" duration-ms="5392" started-at="2020-06-09T13:23:48Z" finished-at="2020-06-09T13:23:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ether.base.Base -->
       <class name="com.ether.testcases.GeneralStoreTest">
-        <test-method status="PASS" signature="homePage()[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="homePage" duration-ms="16513" started-at="2020-06-09T11:10:31Z" finished-at="2020-06-09T11:10:48Z">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="homePage" duration-ms="14309" started-at="2020-06-09T13:23:27Z" finished-at="2020-06-09T13:23:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="productPriceTest(java.lang.String, java.lang.String)[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="productPriceTest" duration-ms="103" started-at="2020-06-09T11:10:48Z" data-provider="getData" depends-on-methods="com.ether.testcases.GeneralStoreTest.homePage" finished-at="2020-06-09T11:10:48Z">
+        <test-method status="PASS" signature="productPriceTest(java.lang.String, java.lang.String)[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="productPriceTest" duration-ms="176" started-at="2020-06-09T13:23:42Z" data-provider="getData" depends-on-methods="com.ether.testcases.GeneralStoreTest.homePage" finished-at="2020-06-09T13:23:42Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productPriceTest -->
-        <test-method status="PASS" signature="productPriceTest(java.lang.String, java.lang.String)[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="productPriceTest" duration-ms="111" started-at="2020-06-09T11:10:48Z" data-provider="getData" depends-on-methods="com.ether.testcases.GeneralStoreTest.homePage" finished-at="2020-06-09T11:10:48Z">
+        <test-method status="PASS" signature="productPriceTest(java.lang.String, java.lang.String)[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="productPriceTest" duration-ms="175" started-at="2020-06-09T13:23:42Z" data-provider="getData" depends-on-methods="com.ether.testcases.GeneralStoreTest.homePage" finished-at="2020-06-09T13:23:42Z">
           <params>
             <param index="0">
               <value>
@@ -75,10 +75,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productPriceTest -->
+        <test-method status="PASS" signature="addProductToCartTest()[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="addProductToCartTest" duration-ms="5315" started-at="2020-06-09T13:23:42Z" depends-on-methods="com.ether.testcases.GeneralStoreTest.productPriceTest" finished-at="2020-06-09T13:23:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCartTest -->
       </class> <!-- com.ether.testcases.GeneralStoreTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
-  <suite name="Ether Digital Activity" duration-ms="0" started-at="2020-06-09T05:40:55Z" finished-at="2020-06-09T05:40:55Z">
+  <suite name="Ether Digital Activity" duration-ms="0" started-at="2020-06-09T07:53:54Z" finished-at="2020-06-09T07:53:54Z">
     <groups>
     </groups>
   </suite> <!-- Ether Digital Activity -->

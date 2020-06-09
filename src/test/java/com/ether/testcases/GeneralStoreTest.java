@@ -22,15 +22,6 @@ public class GeneralStoreTest {
 	@Test//(dataProvider = "getData", dataProviderClass = TestData.class)
 	public void homePage() throws InterruptedException {
 		AndroidDriver driver = Base.driver;
-		/*
-		home.countryDropdown.click();
-		home.country.click();
-		home.name.sendKeys("sami");
-		Thread.sleep(3000);
-		home.gender.click();
-		Thread.sleep(3000);
-		home.search.click();
-		*/
 		driver.findElement(GSHomePage.countryDropdown).click();
 		System.out.println(driver.findElement(GSHomePage.country).getText());
 		driver.findElement(GSHomePage.country).click();
@@ -41,47 +32,8 @@ public class GeneralStoreTest {
 		Thread.sleep(2000);
 		driver.findElement(GSHomePage.search).click();
 		Thread.sleep(2000);
-		
-		List<WebElement> productList = driver.findElements(By.id("com.androidsample.generalstore:id/productPrice"));
-		//productList.get(0)
-		System.out.println(productList.get(0).getText());
-		//Base.scrollToText("Converse All Star");
-		Thread.sleep(2000);
 		//driver.resetApp();
-		/*
-		MobileElement el1 = (MobileElement) driver.findElementById("android:id/text1");
-		el1.click();
-		MobileElement el2 = (MobileElement) driver.findElementByXPath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[3]");
-		el2.click();
-		MobileElement el3 = (MobileElement) driver.findElementById("com.androidsample.generalstore:id/nameField");
-		el3.sendKeys(name);
-		Thread.sleep(3000);
-		MobileElement el4 = (MobileElement) driver.findElementById("com.androidsample.generalstore:id/radioMale");
-		el4.click();
-		Thread.sleep(3000);
-		MobileElement el5 = (MobileElement) driver.findElementById("com.androidsample.generalstore:id/btnLetsShop");
-		el5.click();
 		
-		MobileElement el6 = (MobileElement) driver.findElementByXPath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView");
-		el6.click();
-		MobileElement el7 = (MobileElement) driver.findElementByXPath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.ImageView");
-		el7.click();
-		MobileElement el8 = (MobileElement) driver.findElementByXPath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView[2]");
-		el8.click();
-		MobileElement el9 = (MobileElement) driver.findElementById("com.androidsample.generalstore:id/appbar_btn_cart");
-		el9.click();
-		MobileElement el10 = (MobileElement) driver.findElementById("com.androidsample.generalstore:id/productPrice");
-		el10.click();
-		MobileElement el11 = (MobileElement) driver.findElementById("com.androidsample.generalstore:id/btnProceed");
-		el11.click();
-		MobileElement el12 = (MobileElement) driver.findElementByXPath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View[1]");
-		el12.click();
-		*/
 	}
 	@Test(dataProvider = "getData", dataProviderClass = TestData.class , dependsOnMethods = "homePage")
 	public void productPriceTest(String product , String price) {
@@ -92,18 +44,43 @@ public class GeneralStoreTest {
 		//productList.get(0)
 		System.out.println(productList.get(0).getText());
 		System.out.println(product);
-		if(productList.contains(product.trim())) {
-			priceIndex = productList.indexOf(product);
-			if(priceList.get(priceIndex).getText().equals(price)) {
-				System.out.println("price matched");
-			}else
-				System.out.println("actual price is "+ priceList.get(priceIndex).getText());
+		for(int i=0; i<productList.size(); i++) {
+			if(productList.get(i).getText().matches(product) && priceList.get(i).getText().equals(price)) {
+				System.out.println("product exists");
+				actions.info("product exists");
+				actions.pass("The price is ");
+			}
 		}
-		else
-			System.out.println("given product does not exists");
-			actions.info("This product doesn't exists");
 		
-		//System.out.println(productList.get(0).getText());
+	}
+	
+	@Test(dependsOnMethods = "productPriceTest")
+	public void addProductToCartTest() throws InterruptedException {
+		AndroidDriver<WebElement> driver = Base.driver;
+		//List<WebElement> cartLinks = driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart"));
+		//List<WebElement> productList = driver.findElements(By.id("com.androidsample.generalstore:id/productName"));
+		
+		List<WebElement> cartLinks = driver.findElements(GSHomePage.cartList);
+		List<WebElement> productList = driver.findElements(GSHomePage.productList);
+		//String productName = productList.get(0).getText();
+		for(WebElement cart : cartLinks) {
+			//String productName = cart.getText();
+			cart.click();
+			actions.info("product is added to the cart");
+			Thread.sleep(1000);
+		}
+		//String cartCount = driver.findElement(By.id("com.androidsample.generalstore:id/counterText")).getText();
+		String cartCount = driver.findElement(GSHomePage.cartCount).getText();
+		if(Integer.parseInt(cartCount) == cartLinks.size()) {
+			actions.pass("Items are succesfully added to the cart");
+			
+		}
+		System.out.println("number of items added to the cart are "+ cartCount);
+		System.out.println("sixe of the cartList is "+ cartLinks.size());
+		//cartLinks.get(0).click();
+		//driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+		driver.findElement(GSHomePage.cartButton).click();
+		Thread.sleep(3000);
 		
 	}
 }

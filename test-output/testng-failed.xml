@@ -4,7 +4,7 @@
   <parameter name="deviceType" value="emulator"/>
   <parameter name="emulator" value="emulator-5554"/>
   <parameter name="realDevice" value="R58M78H1SPP"/>
-  <parameter name="appName" value="Math Games Learn Add Subtract Multiply Divide_v8.4_apkpure.com.apk"/>
+  <parameter name="appName" value="General-Store.apk"/>
   <listeners>
     <listener class-name="com.ether.listener.TestListener"/>
   </listeners>
@@ -15,6 +15,7 @@
         <methods>
           <include name="homePage"/>
           <include name="productPriceTest"/>
+          <include name="addProductToCartTest"/>
         </methods>
       </class> <!-- com.ether.testcases.GeneralStoreTest -->
     </classes>

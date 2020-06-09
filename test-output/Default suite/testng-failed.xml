@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ether.testcases.LocalAndroidTest">
+      <class name="com.ether.testcases.GeneralStoreTest">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="quickStartAndroidNativeDemo"/>
+          <include name="homePage"/>
+          <include name="productPriceTest"/>
+          <include name="addProductToCartTest"/>
         </methods>
-      </class> <!-- com.ether.testcases.LocalAndroidTest -->
+      </class> <!-- com.ether.testcases.GeneralStoreTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
