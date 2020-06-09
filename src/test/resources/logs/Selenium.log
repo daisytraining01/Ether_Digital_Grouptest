@@ -1,0 +1,5 @@
+19:18:39,445 DEBUG devpinoyLogger:39 - Config file is loaded!!
+19:18:39,455 DEBUG devpinoyLogger:52 - OR file is loaded!!
+19:19:11,174 DEBUG devpinoyLogger:62 - Chrome Launched!!
+19:19:42,278 DEBUG devpinoyLogger:69 - Navigated to https://trevo.my/events/fundyourdrive
+19:20:24,200 DEBUG devpinoyLogger:80 - Test Execution completed

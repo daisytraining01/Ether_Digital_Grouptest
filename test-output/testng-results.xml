@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="16823" started-at="2020-06-09T05:40:31Z" finished-at="2020-06-09T05:40:48Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="16823" started-at="2020-06-09T05:40:31Z" finished-at="2020-06-09T05:40:48Z">
+      <class name="com.ether.base.Base">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ether.base.Base@68e5eea7]" name="setUp" is-config="true" duration-ms="20163" started-at="2020-06-09T11:10:11Z" finished-at="2020-06-09T11:10:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emulator]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[General-Store.apk]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R58M78H1SPP]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ether.base.Base@68e5eea7]" name="tearDown" is-config="true" duration-ms="6056" started-at="2020-06-09T11:10:49Z" finished-at="2020-06-09T11:10:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ether.base.Base -->
+      <class name="com.ether.testcases.GeneralStoreTest">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="homePage" duration-ms="16513" started-at="2020-06-09T11:10:31Z" finished-at="2020-06-09T11:10:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="productPriceTest(java.lang.String, java.lang.String)[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="productPriceTest" duration-ms="103" started-at="2020-06-09T11:10:48Z" data-provider="getData" depends-on-methods="com.ether.testcases.GeneralStoreTest.homePage" finished-at="2020-06-09T11:10:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Air Jordan 4 Retro]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$160.97]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productPriceTest -->
+        <test-method status="PASS" signature="productPriceTest(java.lang.String, java.lang.String)[pri:0, instance:com.ether.testcases.GeneralStoreTest@291b4bf5]" name="productPriceTest" duration-ms="111" started-at="2020-06-09T11:10:48Z" data-provider="getData" depends-on-methods="com.ether.testcases.GeneralStoreTest.homePage" finished-at="2020-06-09T11:10:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Air Jordan 1 Mid SE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$120.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productPriceTest -->
+      </class> <!-- com.ether.testcases.GeneralStoreTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+  <suite name="Ether Digital Activity" duration-ms="0" started-at="2020-06-09T05:40:55Z" finished-at="2020-06-09T05:40:55Z">
+    <groups>
+    </groups>
+  </suite> <!-- Ether Digital Activity -->
+</testng-results>

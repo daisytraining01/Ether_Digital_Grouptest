@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="deviceType" value="emulator"/>
+  <parameter name="emulator" value="emulator-5554"/>
+  <parameter name="realDevice" value="R58M78H1SPP"/>
+  <parameter name="appName" value="Math Games Learn Add Subtract Multiply Divide_v8.4_apkpure.com.apk"/>
+  <listeners>
+    <listener class-name="com.ether.listener.TestListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="deviceType" value="emulator"/>
+    <classes>
+      <class name="com.ether.testcases.GeneralStoreTest">
+        <methods>
+          <include name="homePage"/>
+          <include name="productPriceTest"/>
+        </methods>
+      </class> <!-- com.ether.testcases.GeneralStoreTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
